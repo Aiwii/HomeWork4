@@ -13,10 +13,10 @@ public class Main {
 //Task-2
         System.out.println("Task-2");
         int temp = 5;
-        if (temp >= 5) {
-            System.out.println("На улице " + temp + " градусов, можно идти без шапки.");
-        } else {
+        if (temp < 5) {
             System.out.println("На улице " + temp + " градусов, нужно надеть шапку.");
+        } else if (temp >= 5) {
+            System.out.println("На улице " + temp + " градусов, можно идти без шапки.");
         }
 //Task-3
         System.out.println("Task-3");
@@ -57,11 +57,11 @@ System.out.println("Task-6");
         //На всякий случай вычислил кол-во стоячих мест.
         int standingPlace = (сapacity - sittingPlace);
         if (yourPlace >= 1 && yourPlace <= 60) {
-            System.out.println("Ваше место равно " +yourPlace +", оно сидячее приятной поездки.");
+            System.out.println("Есть место в вагоне, оно сидячее.");
         } else if (yourPlace > 60 && yourPlace <= 102) {
-            System.out.println("Ваше место равно " +yourPlace +", оно стоячее извините за неудобство.");
+            System.out.println("Есть место в вагоне,оно стоячее.");
         } else if (yourPlace > 102) {
-            System.out.println("Увы вагон уже полностью забит. Вы " +yourPlace +", а максимально кол-во мест " +сapacity +"." );
+            System.out.println("Вагон уже полностью забит." );
         }
 //Task-7
 System.out.println("Task-7");
